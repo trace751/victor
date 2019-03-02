@@ -28,8 +28,8 @@ body {
 ===================*/
 
 .hero {
-	background: linear-gradient(0deg,rgb(0, 0, 0),#000000b0),
-		url('assets/hero.jpg') no-repeat center center;
+	background: linear-gradient(0deg,rgb(1, 2, 15),#00000000),
+		url(assets/hero.jpg) no-repeat center center;
   	height: 100vh;
   	background-size: cover;
   	display: flex;
@@ -48,10 +48,9 @@ body {
 }
 
 .hero-text h1 {
-	font-family: 'Padauk', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-size: 4em;
-
 }
 
 .hero-text p {
@@ -61,12 +60,26 @@ body {
 }
 
 .hero-text,
-.hero-embed {
+.hero-right {
 	flex: 50%;
 }
 
 .hero-text {
 	margin-left: 50px;
+}
+
+.hero-right {
+	color: #fff;
+    text-align: right;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.hero-right i {
+	margin-top: 20px;
+	font-size: 20px;
 }
 
 /*===================
@@ -92,13 +105,13 @@ nav {
 nav #brand {
   position: absolute;
   margin-left: 50px;
-  font-size: 50px;
+  font-size: 1em;
   line-height: 70px;
   font-weight: bold;
 }
 
 nav #brand a {
-  color: #fff;
+  color: #c2964a;
   transition: all 0.3s ease-out;
 }
 
@@ -107,8 +120,8 @@ nav #brand a:hover {
 }
 
 nav #menu {
-  text-align: center;
-
+  text-align: right;
+  margin-right: 50px;
 }
 
 nav #menu li {
@@ -121,7 +134,8 @@ nav #menu li {
 }
 
 nav #menu li a {
-  color: #fff;
+  color: #d1a114;
+  letter-spacing: 5px;
 }
 
 nav #menu li:hover {
@@ -134,7 +148,6 @@ nav #menu li:hover {
   top: 14px;
   z-index: 999;
   width: 40px;
-  height: 40px;
   cursor: pointer;
   float: right;
   transition: all 0.3s ease-out;
@@ -143,9 +156,9 @@ nav #menu li:hover {
 }
 
 #toggle .span {
-  height: 7px;
-  background: #333;
-  margin: 5px auto;
+  height: 3px;
+  background: #c2964a;
+  margin: 6px auto;
   backface-visibility: hidden;
 }
 
@@ -163,9 +176,7 @@ nav #menu li:hover {
 
 #resize {
   z-index: 1;
-  position: absolute;
-  top: 0px;
-  background: #ddd;
+  background: #333;
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -185,7 +196,7 @@ nav #menu li:hover {
   text-align: center;
   padding: 20px 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 1em;
   min-height: 50px;
   font-weight: bold;
   cursor: pointer;
@@ -202,7 +213,8 @@ nav #menu li:hover {
 }
 
 #resize #menu li a {
-  color: #212121;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 #resize.active {
@@ -238,20 +250,19 @@ nav #menu li:hover {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #2828282e;
+	background-color: #01011163;
     justify-content: center;
     align-items: center;
 }
 
 #hero-bottom-flex h4{
-	color: #b09b02;
-	font-family: 'Padauk', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
 
 #hero-bottom-flex p{
-	font-family: 'Padauk', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -264,6 +275,50 @@ nav #menu li:hover {
 	color: #fff;
 }
 
+.bottom-flex-one {
+    background-color: #c2964a;
+    padding: 20px;
+}
+
+.bottom-flex-one h4 {
+	color: #000;
+}
+
+
 .bottom-flex-three {
 	background-color: #000;
+}
+
+
+/*===================
+	Media Query
+===================*/
+
+@media screen and (max-width: 768px){
+	.hero-flex-container {
+		flex-direction: column;
+	}
+
+	.hero-right {
+		flex-direction: row;
+		justify-content: left;
+		margin-left: 50px;
+	}
+
+	.hero-text h1 {
+		font-size: 2em;
+	}
+
+	.hero-right i {
+		margin-right: 20px;
+	}
+
+	.hero-text p {
+		font-size: 1em;
+		line-height: 28px;
+	}
+
+	#hero-bottom-flex {
+		display: block;
+	}
 }
