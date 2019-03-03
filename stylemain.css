@@ -77,9 +77,10 @@ body {
     margin-right: 50px;
 }
 
-.hero-right i {
+.hero-right a {
 	margin-top: 20px;
 	font-size: 20px;
+	color: #fff;
 }
 
 /*===================
@@ -259,6 +260,8 @@ nav #menu li:hover {
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 4px;
+	display: inline-flex;
+    align-items: center;
 }
 
 #hero-bottom-flex p{
@@ -266,7 +269,7 @@ nav #menu li:hover {
 	letter-spacing: 2px;
 }
 
-.bottom-flex-one,
+
 .bottom-flex-two,
 .bottom-flex-three
 {
@@ -275,12 +278,12 @@ nav #menu li:hover {
 	color: #fff;
 }
 
-.bottom-flex-one {
+.bottom-cta {
     background-color: #c2964a;
     padding: 20px;
 }
 
-.bottom-flex-one h4 {
+.bottom-cta h4 {
 	color: #000;
 }
 
@@ -309,7 +312,7 @@ nav #menu li:hover {
 		font-size: 2em;
 	}
 
-	.hero-right i {
+	.hero-right a {
 		margin-right: 20px;
 	}
 
